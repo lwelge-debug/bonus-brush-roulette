@@ -1,23 +1,193 @@
 const DEFAULT_BRUSHES = [
-  "Soft Sketcher (BB1)",
-  "Chunky Charcoal (BB1)",
-  "Velvet Ink (BB2)",
-  "Rough Gouache (BB2)",
-  "Magic Pencil (BB3)",
-  "Painterly Wash (BB3)",
-  "Grainy Marker (BB4)",
-  "Cloudy Crayon (BB4)"
+  "Chalky Grain Liner (BB1)",
+  "Loyal Liner (BB1)",
+  "Ol' Softie (BB1)",
+  "Garbage Bin (BB1)",
+  "Poodle's Ear (BB1)",
+  "Rocky Paint Pull (BB1)",
+  "Composition Notebook (BB1)",
+  "Snazzy Jazzy (BB1)",
+  "Soft Sandy (BB1)",
+  "Watery Painter (BB1)",
+  "Wet Sand (BB1)",
+  "Waxy Wide (BB1)",
+  "Squat Square (BB1)",
+  "Fishnet (BB1)",
+  "Inky Tom (BB1)",
+  "Triangle Trail (BB1)",
+  "Little Lines (BB1)",
+  "Dual-Color Rush (BB1)",
+  "Dual-Color Petal Pusher (BB1)",
+  "Dual-Color Tilt Wash (BB1)",
+  "Deckled Liner (BB2)",
+  "Spotty Square (BB2)",
+  "Pencily Liner (BB2)",
+  "Chonky Grain (BB2)",
+  "Grit Yum Crayon (BB2)",
+  "Pokey Chalk (BB2)",
+  "Soppy Shader (BB2)",
+  "Stippled Shader (BB2)",
+  "Make a Mess (BB2)",
+  "Dry Drag (BB2)",
+  "Wet Brushy (BB2)",
+  "Dry Brushy (BB2)",
+  "Crunchy Smudge (BB2)",
+  "Swooshy Fill (BB2)",
+  "Adored Ink Pen (BB2)",
+  "Skippy Ink Pen (BB2)",
+  "Alcohol Ink (BB2)",
+  "Diamond Halftone (BB2)",
+  "Dual-Color Sparkle (BB2)",
+  "Leafy Smudge (BB2)",
+  "Playful Painter (BB3)",
+  "Ashen Liner (BB3)",
+  "Rustic Inker (BB3)",
+  "Soft Spot Liner (BB3)",
+  "Chalk Line (BB3)",
+  "Juicy Dry (BB3)",
+  "Thirsty Ends (BB3)",
+  "Crunch Painter (BB3)",
+  "Tide Pull (BB3)",
+  "Sahara Wash (BB3)",
+  "Gritty Glaze (BB3)",
+  "Serenade (BB3)",
+  "Jumble Stroke (BB3)",
+  "Speckle Spray (BB3)",
+  "Sweet Dreams (BB3)",
+  "Gravelicious (BB3)",
+  "Halftone Haze (BB3)",
+  "Whisper Grain (BB3)",
+  "Lettering Shadow (BB3)",
+  "Sketchy Grit Fill (BB3)",
+  "Sketchy Stuff (BB4)",
+  "Blocksmith (BB4)",
+  "Sootline (BB4)",
+  "Tattered Ink (BB4)",
+  "Goo Ink (BB4)",
+  "Cozy Charcoal (BB4)",
+  "Grizzle Stick (BB4)",
+  "Zephyr Roll (BB4)",
+  "Cotton Roll (BB4)",
+  "Snag & Drag (BB4)",
+  "Riso-ish (BB4)",
+  "Wispycolor (BB4)",
+  "Brushtail Scribble (BB4)",
+  "Pebble Pearls (BB4)",
+  "Scritch Scratch (BB4)",
+  "Inky Waves (BB4)",
+  "Stamp Blot (BB4)",
+  "Aqua Fissure (BB4)",
+  "Spot Drop (BB4)",
+  "Magic Spell (BB4)"
 ];
 
 const DEFAULT_SUBJECTS = [
-  "a cozy kitchen",
-  "a sleepy cat",
-  "a magical storefront",
-  "a field of wildflowers",
-  "a tiny dragon",
-  "a rainy city street",
   "a birthday cake",
-  "a bouquet in a mug"
+  "a cupcake",
+  "a balloon",
+  "a party hat",
+  "a gift box",
+  "a candle",
+  "a sparkler",
+  "a trophy",
+  "a medal",
+  "a ribbon",
+  "a party horn",
+  "a pennant flag",
+  "a ferris wheel",
+  "a carousel horse",
+  "a ticket",
+  "popcorn",
+  "cotton candy",
+  "a snow cone",
+  "a candy apple",
+  "lemonade",
+  "a corn dog",
+  "a pretzel",
+  "a donut",
+  "an ice cream cone",
+  "bunting",
+  "a top hat",
+  "a unicycle",
+  "a paintbrush",
+  "a pencil",
+  "a crayon",
+  "a marker",
+  "a paint tube",
+  "an apple pencil",
+  "an ipad",
+  "a paint palette",
+  "a paint splatter",
+  "a sketchbook",
+  "an apple",
+  "a lemon",
+  "an orange",
+  "a pear",
+  "a cherry",
+  "a strawberry",
+  "a flower",
+  "a tulip",
+  "a daisy",
+  "a sunflower",
+  "a leaf",
+  "an acorn",
+  "a four-leaf clover",
+  "a mushroom",
+  "a cactus",
+  "a pine tree",
+  "a houseplant",
+  "a watering can",
+  "a teacup",
+  "a teapot",
+  "a jar",
+  "an umbrella",
+  "rain boots",
+  "a kite",
+  "a backpack",
+  "a camera",
+  "a light bulb",
+  "a key",
+  "a coin",
+  "an envelope",
+  "a postage stamp",
+  "a button",
+  "a bow",
+  "a lantern",
+  "a windmill",
+  "the sun",
+  "the moon",
+  "a cloud",
+  "a rainbow",
+  "a star",
+  "a heart",
+  "a butterfly",
+  "a bee",
+  "a ladybug",
+  "a dragonfly",
+  "a caterpillar",
+  "a bird",
+  "a nest",
+  "a feather",
+  "a frog",
+  "a duck",
+  "a goldfish",
+  "a turtle",
+  "a hedgehog",
+  "a bunny",
+  "a fox",
+  "a mouse",
+  "an owl",
+  "a penguin",
+  "a whale",
+  "an octopus",
+  "a cat",
+  "a dog",
+  "a teddy bear",
+  "a potted plant",
+  "a seashell",
+  "a moth",
+  "a beetle",
+  "a hot air balloon"
 ];
 
 const WHEEL_COLORS = [
@@ -42,22 +212,11 @@ const els = {
   brushCount: document.getElementById("brush-count"),
   subjectCount: document.getElementById("subject-count"),
   spinButton: document.getElementById("spin-button"),
-  result: document.getElementById("result"),
-  editor: document.getElementById("editor"),
-  closeEditor: document.getElementById("close-editor"),
-  brushInput: document.getElementById("brush-input"),
-  subjectInput: document.getElementById("subject-input"),
-  applyLists: document.getElementById("apply-lists"),
-  resetLists: document.getElementById("reset-lists"),
-  embedUrl: document.getElementById("embed-url"),
-  embedCode: document.getElementById("embed-code")
+  result: document.getElementById("result")
 };
 
-const params = new URLSearchParams(window.location.search);
-const isEditorMode = params.get("edit") === "1";
-
-let brushItems = readListParam("brushes", DEFAULT_BRUSHES);
-let subjectItems = readListParam("subjects", DEFAULT_SUBJECTS);
+let brushItems = [...DEFAULT_BRUSHES];
+let subjectItems = [...DEFAULT_SUBJECTS];
 let isSpinning = false;
 
 const wheels = {
@@ -78,35 +237,6 @@ const wheels = {
     pickedIndex: null
   }
 };
-
-function readListParam(key, fallback) {
-  const raw = params.get(key);
-  if (!raw) return [...fallback];
-
-  try {
-    const decoded = JSON.parse(decodeURIComponent(raw));
-    if (Array.isArray(decoded)) {
-      const clean = decoded.map((item) => String(item).trim()).filter(Boolean);
-      if (clean.length) return clean;
-    }
-  } catch (_) {
-    const clean = raw.split("|").map((item) => item.trim()).filter(Boolean);
-    if (clean.length) return clean;
-  }
-
-  return [...fallback];
-}
-
-function writeListParam(items) {
-  return encodeURIComponent(JSON.stringify(items));
-}
-
-function splitLines(value) {
-  return value
-    .split("\n")
-    .map((line) => line.trim())
-    .filter(Boolean);
-}
 
 function formatBrush(brush) {
   const match = brush.match(/^(.*?)\s*\(BB\s*(\d+)\)\s*$/i);
@@ -213,14 +343,19 @@ function drawWheel(wheel) {
       ? "800 15px Figtree, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
       : "800 20px Figtree, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
 
-    const label = formatBrush(item).name.length < item.length ? formatBrush(item).name : item;
-    const lines = hasCompactLabels
-      ? [truncateLabel(label, 18)]
-      : wrapText(ctx, label, radius * 0.48);
+    const parsed = formatBrush(item);
+    const label = parsed.name.length < item.length ? parsed.name : item;
+    const lines = hasCompactLabels ? [truncateLabel(label, 18)] : wrapText(ctx, label, radius * 0.48);
     const lineHeight = hasCompactLabels ? 17 : 22;
+
     lines.forEach((line, lineIndex) => {
-      ctx.fillText(line, radius - (hasCompactLabels ? 16 : 22), (lineIndex - (lines.length - 1) / 2) * lineHeight);
+      ctx.fillText(
+        line,
+        radius - (hasCompactLabels ? 16 : 22),
+        (lineIndex - (lines.length - 1) / 2) * lineHeight
+      );
     });
+
     ctx.restore();
   });
 
@@ -308,65 +443,13 @@ async function spinBoth() {
   els.spinButton.disabled = false;
 }
 
-function updateEditor() {
-  if (!isEditorMode) return;
-
-  els.brushInput.value = brushItems.join("\n");
-  els.subjectInput.value = subjectItems.join("\n");
-  els.embedUrl.value = makeEmbedUrl();
-  els.embedCode.value = makeEmbedCode();
-}
-
-function makeEmbedUrl() {
-  const url = new URL(window.location.href);
-  url.searchParams.delete("edit");
-  url.searchParams.set("brushes", writeListParam(brushItems));
-  url.searchParams.set("subjects", writeListParam(subjectItems));
-  return url.toString();
-}
-
-function makeEmbedCode() {
-  const embedUrl = makeEmbedUrl();
-  return `<iframe src="${embedUrl}" width="100%" height="820" style="border:0;" loading="lazy" title="Bonus Brushes drawing prompt wheel"></iframe>`;
-}
-
-function applyLists(nextBrushes, nextSubjects) {
-  brushItems = nextBrushes.length ? nextBrushes : [...DEFAULT_BRUSHES];
-  subjectItems = nextSubjects.length ? nextSubjects : [...DEFAULT_SUBJECTS];
-  wheels.brush.items = brushItems;
-  wheels.subject.items = subjectItems;
-  wheels.brush.pickedIndex = null;
-  wheels.subject.pickedIndex = null;
-  els.brushCount.textContent = `${brushItems.length} options`;
-  els.subjectCount.textContent = `${subjectItems.length} options`;
-  els.brushPicked.textContent = "";
-  els.subjectPicked.textContent = "";
-  els.spinButton.textContent = "Spin both wheels";
-  els.result.textContent = "Your prompt will appear here.";
-  drawWheel(wheels.brush);
-  drawWheel(wheels.subject);
-  updateEditor();
-}
-
 function init() {
   els.brushCount.textContent = `${brushItems.length} options`;
   els.subjectCount.textContent = `${subjectItems.length} options`;
   els.spinButton.addEventListener("click", spinBoth);
 
-  if (isEditorMode) {
-    els.editor.hidden = false;
-    els.applyLists.addEventListener("click", () => {
-      applyLists(splitLines(els.brushInput.value), splitLines(els.subjectInput.value));
-    });
-    els.resetLists.addEventListener("click", () => {
-      applyLists([...DEFAULT_BRUSHES], [...DEFAULT_SUBJECTS]);
-    });
-    els.closeEditor.addEventListener("click", () => {
-      els.editor.hidden = true;
-    });
-  }
-
-  applyLists(brushItems, subjectItems);
+  drawWheel(wheels.brush);
+  drawWheel(wheels.subject);
 }
 
 init();
