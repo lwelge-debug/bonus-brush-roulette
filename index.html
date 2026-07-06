@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonus Brushes Wheel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="wheel-app" aria-labelledby="app-title">
+      <section class="stage">
+        <div class="masthead">
+          <h1 id="app-title">Bonus Brush Roulette</h1>
+          <p class="subline">Spin both wheels and see what you'll create!</p>
+        </div>
+
+        <div class="wheel-grid" aria-live="polite">
+          <section class="wheel-panel" aria-labelledby="brush-title">
+            <div class="wheel-header">
+              <h2 id="brush-title">Procreate Brush</h2>
+              <p id="brush-count"></p>
+            </div>
+            <div class="wheel-wrap">
+              <div class="pointer" aria-hidden="true"></div>
+              <canvas id="brush-wheel" width="520" height="520" aria-label="Procreate Brush spinning wheel"></canvas>
+            </div>
+            <p id="brush-picked" class="wheel-pick" aria-live="polite"></p>
+          </section>
+
+          <section class="wheel-panel" aria-labelledby="subject-title">
+            <div class="wheel-header">
+              <h2 id="subject-title">Subject</h2>
+              <p id="subject-count"></p>
+            </div>
+            <div class="wheel-wrap">
+              <div class="pointer" aria-hidden="true"></div>
+              <canvas id="subject-wheel" width="520" height="520" aria-label="Subject spinning wheel"></canvas>
+            </div>
+            <p id="subject-picked" class="wheel-pick" aria-live="polite"></p>
+          </section>
+        </div>
+
+        <div class="actions">
+          <button id="spin-button" type="button">Spin both wheels</button>
+        </div>
+
+        <p id="result" class="result" role="status">Your prompt will appear here.</p>
+      </section>
+
+      <section id="editor" class="editor" aria-labelledby="editor-title" hidden>
+        <div class="editor-heading">
+          <div>
+            <p class="eyebrow">Private setup</p>
+            <h2 id="editor-title">Set the wheel lists</h2>
+          </div>
+          <button id="close-editor" class="icon-button" type="button" aria-label="Hide editor">x</button>
+        </div>
+
+        <div class="editor-grid">
+          <label>
+            Procreate brushes
+            <textarea id="brush-input" spellcheck="false"></textarea>
+          </label>
+          <label>
+            Subjects
+            <textarea id="subject-input" spellcheck="false"></textarea>
+          </label>
+        </div>
+
+        <div class="editor-actions">
+          <button id="apply-lists" type="button">Apply lists</button>
+          <button id="reset-lists" class="secondary" type="button">Reset defaults</button>
+        </div>
+
+        <label>
+          Iframely / embed URL
+          <textarea id="embed-url" readonly spellcheck="false"></textarea>
+        </label>
+
+        <label>
+          Fallback iframe code
+          <textarea id="embed-code" readonly spellcheck="false"></textarea>
+        </label>
+        <p class="editor-note">Use one item per line. For Iframely, paste the URL above into your site's embed field. Brush items can be written like Pencil Pack (BB3); the result will say Bonus Brushes Vol.3.</p>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
